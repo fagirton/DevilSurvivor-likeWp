@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       style="fill:#000000"
+       id="path2-5"
+       d="M 13.53626,5.8481336 0.33611679,13.46924 l 0,-15.2422127 z"
+       transform="matrix(0.75310303,0,0,0.70630349,1.152774,11.151895)" />
+  </g>
+  <g
+     id="layer2">
+    <path
+       style="fill:#000000"
+       id="path2-5-3"
+       d="M 13.53626,5.8481336 0.33611679,13.46924 l 0,-15.2422127 z"
+       transform="matrix(0.75310303,0,0,0.70630349,11.082776,11.211073)" />
+  </g>
+  <g
+     id="layer3">
+    <path
+       style="fill:#000000"
+       id="path2-5-6"
+       d="M 13.53626,5.8481336 0.33611679,13.46924 l 0,-15.2422127 z"
+       transform="matrix(0.75310303,0,0,0.70630349,21.023575,11.211073)" />
+  </g>
+  <style>
+   #layer1 {
+      animation: 1s steps(2,jump-none) 0.1s infinite normal fade-tri
+   }
+   #layer2 {
+      animation: 1s steps(2,jump-none) 0.3s infinite normal fade-tri
+   }
+   #layer3 {
+      animation: 1s steps(2,jump-none) 0.5s infinite normal fade-tri
+   }   
+   @keyframes fade-tri {
+      0% {
+         fill-opacity: 0.0;
+      }
+      
+      100% {
+         fill-opacity: 1;
+      }
+   }   
+  </style>
+</svg>

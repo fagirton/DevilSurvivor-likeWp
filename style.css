@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "FFF_freed";
+  src: url("./assets/FFFFREED.woff");
+}
+@font-face {
+  font-family: "Supernova";
+  src: url("./assets/SUPERNOV.woff");
+}
+
+:root {
+  --shelf-color: #ba4c50;
+  --box-full-color: #550c14;
+  --box-half-color: #240c0c;
+  --panel-border-color: #991029;
+  --gray-cont-border: #5d5d6b;
+  --gray-cont-color1: #453c45;
+  --gray-cont-color2: #342c3c;
+  --white-text-color: #fdfdfd;
+  --red-text-color: #c90024;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.window {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border-left: 0.1em solid;*/
+  border-right: 0.1em solid;
+  border-color: var(--shelf-color);
+}
+
+.grid {
+  background-image: linear-gradient(
+      to right,
+      var(--shelf-color) 0.1em,
+      transparent 0.1em
+    ),
+    linear-gradient(to bottom, var(--shelf-color) 0.1em, transparent 0.1em);
+  background-size: 1.5rem 1.5rem;
+  background-position: 10px left;
+}
+
+.border-ruler {
+  border-color: var(--shelf-color);
+}
+
+.left {
+  display: inline-block;
+  text-align: right;
+  border-right: 0.1em solid;
+  border-color: var(--shelf-color);
+}
+
+.right {
+  align-self: self-start;
+  background-position: left;
+  border-left: 0.1em solid;
+  border-color: var(--shelf-color);
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2.5% 1fr 2.5%;
+  gap: 1em;
+}
+
+.ruler {
+  height: 200%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--shelf-color) 0.1em,
+    transparent 0.1em
+  );
+  background-size: 5rem 5rem;
+  background-position: top;
+}
+
+.ruler-small {
+  background-size: 0.5rem 0.5rem;
+  width: 33%;
+  background-position: top;
+}
+
+.moving-up {
+  animation: 2s linear 0s infinite normal scroll-ruler;
+}
+
+.moving-down {
+  animation: 1s linear 0s infinite reverse scroll-grid;
+}
+
+@keyframes scroll-ruler {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(5rem);
+  }
+  
+}
+
+@keyframes scroll-grid{
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(1.5rem);
+  }
+  
+}
+
+.shelf-aligned {
+  margin-top: -5vh;
+  margin-bottom: 0;
+  margin-left: 2%;
+  width: 40em;
+  height: 105vh;
+}
+
+.background-gradient {
+  background-image: linear-gradient(to bottom, #110202, #7a060e);
+  background-size: cover;
+}
+
+.corner-cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.panel-top-pos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.panel-top {
+  display: flex;
+  padding-bottom: 0.1em;
+  background-color: #110202;
+  border-bottom: 0.2em solid var(--panel-border-color);
+}
+
+.boxes-grid {
+  gap: 0.2em 0.2em;
+  display: grid;
+  grid: repeat(2, 1em) / auto-flow 1em;
+}
+.fader-hor {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20em;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0, black 100%);
+}
+
+.box-full {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: var(--box-full-color);
+}
+
+.box-half {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: var(--box-half-color);
+}
+
+.gray-cont {
+  background-image: linear-gradient(
+    to bottom,
+    var(--gray-cont-color1) 0% 50%,
+    var(--gray-cont-color2) 50% 100%
+  );
+  --mask: linear-gradient(135deg, #0000 0.8em, #000 0);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  min-width: 14em;
+  height: 2.2em;
+  border-left: 0.1em solid var(--gray-cont-border);
+  border-top: 0.1em solid var(--gray-cont-border);
+  padding-left: 1em;
+  padding-right: 0.2em;
+  white-space: nowrap;
+}
+
+.text-gray-cont {
+  position: relative;
+  display: inline;
+  top: 0.1em;
+  text-shadow: #110202 0.1em 0.1em;
+}
+
+.text-supernova {
+  font-family: "Supernova";
+}
+
+.clock-text {
+  font-size: x-large;
+}
+
+.text-fff {
+  font-family: "FFF_freed";
+}
+
+.svg-icon {
+  vertical-align: middle;
+  height: 1em;
+}
+
+.svg-filter-red {
+  filter: invert(17%) sepia(54%) saturate(4684%) hue-rotate(336deg)
+    brightness(91%) contrast(121%) drop-shadow(#110202 0.1em 0.1em);
+}
+
+.text-white {
+  color: var(--white-text-color);
+}
+
+.text-red {
+  color: var(--red-text-color);
+}
+
+.dr-corner-svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50%;
+  z-index: -1;
+}
+
+.panel-overflow {
+  top: 2.2em;
+}
