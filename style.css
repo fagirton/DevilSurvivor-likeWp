@@ -96,12 +96,11 @@ body {
 
 @keyframes scroll-ruler {
   0% {
-    transform: translateY(0%);
+    transform: translateY(-5rem);
   }
   100% {
-    transform: translateY(5rem);
+    transform: translateY(0%);
   }
-  
 }
 
 @keyframes scroll-grid{
@@ -111,7 +110,6 @@ body {
   100% {
     transform: translateY(1.5rem);
   }
-  
 }
 
 .shelf-aligned {
