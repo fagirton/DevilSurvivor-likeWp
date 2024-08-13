@@ -24,7 +24,7 @@ body {
 }
 
 .window {
-  height: 100%;
+  height: 110%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,6 @@ body {
     ),
     linear-gradient(to bottom, var(--shelf-color) 0.1em, transparent 0.1em);
   background-size: 1.5rem 1.5rem;
-  background-position: 10px left;
 }
 
 .border-ruler {
@@ -103,7 +102,7 @@ body {
   }
 }
 
-@keyframes scroll-grid{
+@keyframes scroll-grid {
   0% {
     transform: translateY(0%);
   }
@@ -192,7 +191,7 @@ body {
 .text-gray-cont {
   position: relative;
   display: inline;
-  top: 0.1em;
+  top: 0.2em;
   text-shadow: #110202 0.1em 0.1em;
 }
 
@@ -236,4 +235,14 @@ body {
 
 .panel-overflow {
   top: 2.2em;
+}
+
+.bottom-svg {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.under-layer {
+  z-index: -2;
 }
