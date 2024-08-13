@@ -112,14 +112,23 @@ body {
 }
 
 .shelf-aligned {
+  position: absolute;
   margin-top: -5vh;
   margin-bottom: 0;
-  margin-left: 2%;
   width: 40em;
   height: 105vh;
 }
 
+.shelf-right {
+  right: 2%;
+}
+
+.shelf-left {
+  left: 2%;
+}
+
 .background-gradient {
+  height: 100vh;
   background-image: linear-gradient(to bottom, #110202, #7a060e);
   background-size: cover;
 }
@@ -233,6 +242,16 @@ body {
   z-index: -1;
 }
 
+.dl-corner-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50%;
+  z-index: -1;
+}
+
+
+
 .panel-overflow {
   top: 2.2em;
 }
@@ -241,6 +260,10 @@ body {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.mirror-svg {
+  transform: scale(-1,1);
 }
 
 .under-layer {
