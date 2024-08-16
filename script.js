@@ -1,3 +1,10 @@
+var timer_update_mode = "minute"; // Sets time interval to update time.
+// Use 'second' for Wallpaper Engine, bc it pauses any timeouts (probably whole JS thread) when wallpaper not visible
+// If you have HTML wrapper for wallpapers where it doesnt stop JS thread, you can use 'minute'
+// Probably it should have 100 ms mode too (prevents visual popins on clock)
+
+var ticks;
+
 function currentTime() {
   let date = new Date();
   let hh = date.getHours();
@@ -6,17 +13,34 @@ function currentTime() {
   let day = date.getDate();
   let month = date.getMonth();
 
-  let time = hh + ":" + mm;
+  let time = (hh < 10 ? "0" + hh : hh) + ":" + (mm < 10 ? "0" + mm : mm);
 
   document.getElementById("clock-text-div").innerText = time;
   document.getElementById("day-text-div").innerText = day;
   document.getElementById("month-text-div").innerText = convertMonth(month);
+
+  setTimerMode(ss);
+
   let t = setTimeout(function () {
     currentTime();
-  }, (60 - ss) * 1000);
+  }, ticks);
 }
 
 currentTime();
+
+function setTimerMode(ss) {
+  switch (timer_update_mode) {
+    case "minute":
+      ticks = (60 - ss) * 1000;
+      break;
+    case "second":
+      ticks = 1000;
+      break;
+    default:
+      ticks = "100";
+      break;
+  }
+}
 
 function convertMonth(month) {
   switch (month) {
