@@ -4,6 +4,30 @@
 	{
 		"properties" : 
 		{
+			"citymirror" : 
+			{
+				"condition" : "",
+				"index" : 4,
+				"options" : 
+				[
+					{
+						"label" : "Disabled",
+						"value" : "n"
+					},
+					{
+						"label" : "Normal",
+						"value" : "nm"
+					},
+					{
+						"label" : "Mirrored",
+						"value" : "m"
+					}
+				],
+				"order" : 104,
+				"text" : "City Mirror",
+				"type" : "combo",
+				"value" : "nm"
+			},
 			"enabletopbar" : 
 			{
 				"index" : 0,
@@ -12,12 +36,68 @@
 				"type" : "bool",
 				"value" : true
 			},
+			"menugridposition" : 
+			{
+				"condition" : "",
+				"index" : 3,
+				"options" : 
+				[
+					{
+						"label" : "Disabled",
+						"value" : "n"
+					},
+					{
+						"label" : "Left",
+						"value" : "l"
+					},
+					{
+						"label" : "Right",
+						"value" : "r"
+					}
+				],
+				"order" : 103,
+				"text" : "Menu Grid position",
+				"type" : "combo",
+				"value" : "l"
+			},
 			"schemecolor" : 
 			{
 				"order" : 0,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0.7411764705882353 0 0"
+			},
+			"switchingpositioning" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Switching/Positioning",
+				"type" : "group",
+				"value" : ""
+			},
+			"vinesposition" : 
+			{
+				"condition" : "",
+				"index" : 2,
+				"options" : 
+				[
+					{
+						"label" : "Disabled",
+						"value" : "n"
+					},
+					{
+						"label" : "Left corner",
+						"value" : "l"
+					},
+					{
+						"label" : "Right corner",
+						"value" : "r"
+					}
+				],
+				"order" : 102,
+				"text" : "Vines Position",
+				"type" : "combo",
+				"value" : "l"
 			}
 		}
 	},

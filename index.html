@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="background-gradient">
-    <div class="shelf-aligned shelf-right">
+    <div class="shelf-aligned shelf-right" id="shelf">
       <grid class="wrapper">
         <div class="border-ruler left ruler moving-up">
           <div class="border-ruler ruler left ruler-small"></div>
@@ -21,7 +21,7 @@
         </div>
       </grid>
     </div>
-    <div class="panel-top panel-top-pos">
+    <div class="panel-top panel-top-pos" id="top-panel">
       <grid class="boxes-grid">
         <div class="box-full"></div>
         <div class="box-half"></div>
@@ -54,7 +54,7 @@
       </grid>
       <div class="fader-hor"></div>
     </div>
-    <div class="gray-cont corner-cont">
+    <div class="gray-cont corner-cont" id="gray-cont">
       <div
         class="text-gray-cont text-supernova text-white clock-text"
         id="day-text-div"
@@ -77,9 +77,9 @@
         16:00
       </div>
     </div>
-    <img alt="" class="dl-corner-svg panel-overflow mirror-svg" src="./assets/vines.svg" />
-    <img alt="" class="bottom-svg under-layer mirror-svg" src="./assets/city.svg" />
-    <script src="script.js"></script>
+    <img alt="" class="dl-corner-svg panel-overflow mirror-svg" id="vines" src="./assets/vines.svg" />
+    <img alt="" class="bottom-svg under-layer mirror-svg" id="city" src="./assets/city.svg" />
     <script src="wallpaperEngine.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
