@@ -7,5 +7,5 @@ Inspired by original game by Atlus and cool wallpaper art by [madeonawhim](https
 #### supernova fat Copyright Sven Stuber - www.superlooper.de
 #### Devil Survivor anf Devil Survivor Overclocked logo are copyrighted by Atlus and used here for a non-commercial fan project.
 
-## Wallpaper Engine branch with specific JS changes is avaliable.
-But it doesn't have all the options yet.
+## Wallpaper Engine branch with specific JS changes is avaliable and published.
+It's released on Steam Workshop [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3311886420)
