@@ -269,3 +269,37 @@ body {
 .under-layer {
   z-index: -2;
 }
+
+.center-svg {
+  height: 70%;
+  display:block;
+  position: relative;
+  top: 10%;
+  margin: auto;
+}
+
+.left-align-svg {
+  left: -10%;
+}
+
+.right-align-svg {
+  right: -10%;
+}
+
+.under-layer2 {
+  z-index: -3;
+}
+
+.left-logo {
+  height: 32%;
+  position: absolute;
+  left: 2%;
+  top: 25%;
+}
+
+.right-logo {
+  height: 32%;
+  position: absolute;
+  right: 2%;
+  top: 25%;
+}
