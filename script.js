@@ -1,4 +1,5 @@
-var timer_update_mode = "minute"; // Sets time interval to update time.
+var timer_update_mode = timer_update_mode == undefined ? "minute" : timer_update_mode; 
+// Sets time interval to update time.
 // Use 'second' for Wallpaper Engine, bc it pauses any timeouts (probably whole JS thread) when wallpaper not visible
 // If you have HTML wrapper for wallpapers where it doesnt stop JS thread, you can use 'minute'
 // Probably it should have 100 ms mode too (prevents visual popins on clock)

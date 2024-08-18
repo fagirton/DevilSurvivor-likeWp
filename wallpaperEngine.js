@@ -9,7 +9,7 @@ window.wallpaperPropertyListener = {
         document.querySelector("#gray-cont").style.visibility = "hidden";
         document.querySelector("#vines").classList.remove("panel-overflow");
       } else {
-        document.querySelector("#panel-top").style.visibility = "visible";
+        document.querySelector("#top-panel").style.visibility = "visible";
         document.querySelector("#gray-cont").style.visibility = "visible";
         document.querySelector("#vines").classList.add("panel-overflow");
       }
@@ -18,18 +18,15 @@ window.wallpaperPropertyListener = {
       let val = properties.vinesposition.value;
       switch (val) {
         case "n":
-          console.log(val);
           document.querySelector("#vines").style.visibility = "hidden";
           break;
         case "l":
-          console.log(val);
           document.querySelector("#vines").style.visibility = "visible";
           document.querySelector("#vines").classList.add("dl-corner-svg");
           document.querySelector("#vines").classList.remove("dr-corner-svg");
           document.querySelector("#vines").classList.add("mirror-svg");
           break;
         case "r":
-          console.log(val);
           document.querySelector("#vines").style.visibility = "visible";
           document.querySelector("#vines").classList.add("dr-corner-svg");
           document.querySelector("#vines").classList.remove("dl-corner-svg");
@@ -68,6 +65,55 @@ window.wallpaperPropertyListener = {
         case "m":
           document.querySelector("#city").style.visibility = "visible";
           document.querySelector("#city").classList.remove("mirror-svg");
+          break;
+      }
+    }
+    if (properties.heroliningposition) {
+      let val = properties.heroliningposition.value;
+      switch (val) {
+        case "n":
+          document.querySelector("#hero").style.visibility = "hidden";
+          break;
+        case "l":
+          document.querySelector("#hero").style.visibility = "visible";
+          document.querySelector("#hero").classList.add("left-align-svg");
+          document.querySelector("#hero").classList.remove("right-align-svg");
+          document.querySelector("#hero").classList.add("mirror-svg");
+          break;
+        case "r":
+          document.querySelector("#hero").style.visibility = "visible";
+          document.querySelector("#hero").classList.remove("left-align-svg");
+          document.querySelector("#hero").classList.add("right-align-svg");
+          document.querySelector("#hero").classList.remove("mirror-svg");
+          break;
+      }
+    }
+    if (properties.logoposition) {
+      let val = properties.logoposition.value;
+      switch (val) {
+        case "l":
+          document.querySelector("#logo").classList.add("left-logo");
+          document.querySelector("#logo").classList.remove("right-logo");
+          break;
+        case "r":
+          document.querySelector("#logo").classList.remove("left-logo");
+          document.querySelector("#logo").classList.add("right-logo");
+          break;
+      }
+    }
+    if (properties.logostyle) {
+      let val = properties.logostyle.value;
+      switch (val) {
+        case "d":
+          document.querySelector("#logo").style.visibility = "hidden";
+          break;
+        case "n":
+          document.querySelector("#logo").style.visibility = "visible";
+          document.querySelector("#logo").src = "./assets/Devil_Survivor_logo.webp";
+          break;
+        case "o":
+          document.querySelector("#logo").style.visibility = "visible";
+          document.querySelector("#logo").src = "./assets/Devil_Survivor_Overclocked_logo.webp";
           break;
       }
     }

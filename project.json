@@ -36,6 +36,71 @@
 				"type" : "bool",
 				"value" : true
 			},
+			"heroliningposition" : 
+			{
+				"index" : 5,
+				"options" : 
+				[
+					{
+						"label" : "Left align",
+						"value" : "l"
+					},
+					{
+						"label" : "Right align",
+						"value" : "r"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "n"
+					}
+				],
+				"order" : 105,
+				"text" : "Hero lining position",
+				"type" : "combo",
+				"value" : "l"
+			},
+			"logoposition" : 
+			{
+				"index" : 7,
+				"options" : 
+				[
+					{
+						"label" : "Left align",
+						"value" : "l"
+					},
+					{
+						"label" : "Right align",
+						"value" : "r"
+					}
+				],
+				"order" : 107,
+				"text" : "Logo position",
+				"type" : "combo",
+				"value" : "l"
+			},
+			"logostyle" : 
+			{
+				"index" : 6,
+				"options" : 
+				[
+					{
+						"label" : "Original",
+						"value" : "n"
+					},
+					{
+						"label" : "Overclocked",
+						"value" : "o"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "d"
+					}
+				],
+				"order" : 106,
+				"text" : "Logo style",
+				"type" : "combo",
+				"value" : "n"
+			},
 			"menugridposition" : 
 			{
 				"condition" : "",
@@ -58,7 +123,7 @@
 				"order" : 103,
 				"text" : "Menu Grid position",
 				"type" : "combo",
-				"value" : "l"
+				"value" : "r"
 			},
 			"schemecolor" : 
 			{
@@ -101,6 +166,9 @@
 			}
 		}
 	},
+	"preview" : "preview.jpg",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
 	"title" : "Devil Survivor Main Menu",
 	"type" : "web",
 	"version" : 0
