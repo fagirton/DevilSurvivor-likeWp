@@ -1,5 +1,5 @@
 ## My attempt to make cool wallpapers in style of Shin Megami Tensei: Devil Survivor
-Preview avaliable at [Github Pages](https://fagirton.github.io/DevilSurvivor-likeWp/)
+Preview avaliable at [Github Pages](https://goutosama.github.io/DevilSurvivor-likeWp/)
 
 Inspired by original game by Atlus and cool wallpaper art by [madeonawhim](https://thiswasmadeonawhim.tumblr.com/post/138170067431/this-one-took-god-knows-how-long-to-make-its)
 ## Project uses and bundles with fonts:
